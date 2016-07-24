@@ -7,9 +7,8 @@
     "desktop": "electron -r babel-register desktop.js",
     "test": "cross-env NODE_ENV=test karma start karma.conf.js --single-run",
     "test:watch": "cross-env NODE_ENV=test karma start karma.conf.js",
-    "postinstall": "npm run build",
     "build": "cross-env NODE_ENV=production webpack --config ./webpack.production.js --progress --profile --colors",
-    "surge": "rm -rf dist && npm run build && cp dist/index.html dist/200.html && surge dist",
+    "surge": "rmdir /q /s dist & npm run build & copy dist\\index.html dist\\200.html & surge dist",
     "production": "node server",
     "eslint": "eslint ."
   },
@@ -60,6 +59,7 @@
     "express": "^4.13.4",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.8.5",
+    "firebase": "^3.2.0",
     "history": "2.1.1",
     "html-loader": "^0.4.3",
     "html-webpack-plugin": "^2.17.0",
@@ -70,6 +70,7 @@
     "react-router": "^2.4.0",
     "react-router-redux": "^4.0.4",
     "redux": "^3.5.2",
+    "redux-saga": "^0.11.0",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.0"
   }
