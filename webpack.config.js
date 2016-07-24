@@ -35,11 +35,19 @@ module.exports = {
       { test: /\.html$/, loader: 'html-loader' },
       {
         test: /\.(jpg|png)$/,
+<<<<<<< HEAD
         loader: 'url-loader?limit=25000&name=images/[name].[ext]'
       },
       {
         test: /\.woff$/,
         loader: 'url-loader',
+=======
+        loader: 'url?limit=25000&name=images/[name].[ext]'
+      },
+      {
+        test: /\.woff$/,
+        loader: 'url',
+>>>>>>> c80a58bab2fbcfea52b68bad1a382b9cea8e30ec
         query: {
           name: 'font/[hash].[ext]',
           limit: 5000,
@@ -48,7 +56,11 @@ module.exports = {
       },
       {
         test: /\.ttf$|\.eot$/,
+<<<<<<< HEAD
         loader: 'file-loader',
+=======
+        loader: 'file',
+>>>>>>> c80a58bab2fbcfea52b68bad1a382b9cea8e30ec
         query: {
           name: 'font/[hash].[ext]'
         }
