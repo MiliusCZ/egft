@@ -1,4 +1,4 @@
-import { compose, createStore, combineReducers } from 'redux';
+import { compose, createStore, applyMiddleware, combineReducers } from 'redux';
 
 import * as reducers from 'reducers';
 import sagas from 'sagas';

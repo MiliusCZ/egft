@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import "./header.scss";
+//import styles from "./header.css";
 import imageSource from "assets/images/logo-alt.png";
 
 export class Header extends Component {

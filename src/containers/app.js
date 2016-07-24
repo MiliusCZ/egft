@@ -1,3 +1,6 @@
+import 'assets/styles/index.scss';
+import 'material-design-lite';
+
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import styles from './app.css';
@@ -19,13 +22,15 @@ export class App extends Component {
 
   render() {
     return (
-      <div className="{styles.container} mdl-layout mdl-js-layout mdl-layout--fixed-header">
-        <Header />
-        <main className="mdl-layout__content">
+      <div className={styles.container}>
+        <div className="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+          <Header />
+          <div className="mdl-layout__content">
             <Content />
-        </main>
-        <Footer />
-    </div >
+          </div>
+          <Footer />
+        </div>
+      </div >
     );
   }
 }

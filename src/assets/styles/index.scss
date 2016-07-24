@@ -1,0 +1,39 @@
+//@import "./colors.scss";
+@import "~material-design-lite/src/material-design-lite.scss";
+
+@font-face {
+    font-family: sansation; /* deklarace fontu */
+    src: url("assets/fonts/Sansation_Regular.ttf"); /* propojení na umístění souboru */
+}
+
+body {
+    font-family: sansation;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: sansation;
+}
+
+footer {
+    //background-color: $color-accent;
+    color: white;
+}
+
+.mdl-layout__content {
+    background-color: #eee;
+}
+
+.mdl-layout__header-row {
+    padding: 10px 30px 10px 30px;
+    height: 84px;
+}
+
+.page-content {
+    display: flex;
+    margin: 30px;
+    justify-content: center;
+}
+
+.mdl-card {
+     margin: 15px;
+}

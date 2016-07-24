@@ -1,0 +1,8 @@
+$color-primary: "210, 205, 12";
+$color-primary-dark: "127, 123, 39";
+$color-accent: "97, 85, 79";
+
+$footer-bg-color: unquote("rgb(#{$color-accent})");
+
+//$layout-header-bg-color: white;
+$layout-header-text-color: unquote("rgb(#{$color-accent})");
