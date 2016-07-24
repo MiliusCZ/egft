@@ -50,7 +50,27 @@ module.exports = {
       { test: /\.scss$/, loader: `${stylesheetsLoader}'!sass` },
       { test: /\.sass$/, loader: `${stylesheetsLoader}'!sass?indentedSyntax=sass` },
       { test: /\.less$/, loader: `${stylesheetsLoader}'!less` },
-      { test: /\.html$/, loader: 'html-loader' }
+      { test: /\.html$/, loader: 'html-loader' },
+      {
+        test: /\.(jpg|png)$/,
+        loader: 'url?limit=25000&name=images/[name].[ext]'
+      },
+      {
+        test: /\.woff$/,
+        loader: 'url',
+        query: {
+          name: 'font/[hash].[ext]',
+          limit: 5000,
+          mimetype: 'application/font-woff'
+        }
+      },
+      {
+        test: /\.ttf$|\.eot$/,
+        loader: 'file',
+        query: {
+          name: 'font/[hash].[ext]'
+        }
+      }
     ]
   }
 };
