@@ -22,7 +22,6 @@ export class App extends Component {
 
   render() {
     return (
-<<<<<<< HEAD
       <div className={styles.container}>
         <div className="mdl-layout mdl-js-layout mdl-layout--fixed-header">
           <Header />
@@ -32,15 +31,6 @@ export class App extends Component {
           <Footer />
         </div>
       </div >
-=======
-      <div className="{styles.container} mdl-layout mdl-js-layout mdl-layout--fixed-header">
-        <Header />
-        <main className="mdl-layout__content">
-            <Content />
-        </main>
-        <Footer />
-    </div >
->>>>>>> c80a58bab2fbcfea52b68bad1a382b9cea8e30ec
     );
   }
 }
