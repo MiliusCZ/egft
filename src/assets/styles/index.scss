@@ -1,31 +1,20 @@
-//@import "./colors.scss";
-@import "~material-design-lite/src/material-design-lite.scss";
+$icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
+@import '~bootstrap-sass/assets/stylesheets/_bootstrap.scss';
 
-@font-face {
-    font-family: sansation; /* deklarace fontu */
-    src: url("assets/fonts/Sansation_Regular.ttf"); /* propojení na umístění souboru */
-}
+@import "./colors.scss";
+@import "./fonts.scss";
+@import "./base.scss";
 
-body {
-    font-family: sansation;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: sansation;
-}
+@import "./bootstrap.mods.scss";
 
 footer {
-    //background-color: $color-accent;
+    position: absolute;
+    width: 100%;
+    height: 210px;
+
+    padding: 15px 0;
+    background-color: $color-highlight;
     color: white;
-}
-
-.mdl-layout__content {
-    background-color: #eee;
-}
-
-.mdl-layout__header-row {
-    padding: 10px 30px 10px 30px;
-    height: 84px;
 }
 
 .page-content {
@@ -34,6 +23,7 @@ footer {
     justify-content: center;
 }
 
-.mdl-card {
-     margin: 15px;
+.panel-body  img {
+    width: 100%;
 }
+

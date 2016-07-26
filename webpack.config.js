@@ -29,16 +29,16 @@ module.exports = {
         loader: 'babel'
       },
       { test: /\.css$/, loader: stylesheetsLoader },
-      { test: /\.scss$/, loader: `${stylesheetsLoader}'!sass` },
-      { test: /\.sass$/, loader: `${stylesheetsLoader}'!sass?indentedSyntax=sass` },
-      { test: /\.less$/, loader: `${stylesheetsLoader}'!less` },
+      { test: /\.scss$/, loader: 'style-loader!css-loader!sass-loader' },
+      { test: /\.sass$/, loader: `${stylesheetsLoader}!sass?indentedSyntax=sass` },
+      { test: /\.less$/, loader: `${stylesheetsLoader}!less` },
       { test: /\.html$/, loader: 'html-loader' },
       {
         test: /\.(jpg|png)$/,
         loader: 'url-loader?limit=25000&name=images/[name].[ext]'
       },
       {
-        test: /\.woff$/,
+        test: /\.(woff2|woff|otf|svg)$/,
         loader: 'url-loader',
         query: {
           name: 'font/[hash].[ext]',

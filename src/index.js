@@ -1,3 +1,8 @@
+import 'assets/styles/index.scss';
+import 'jquery/src/jquery.js';
+import 'bootstrap-sass/assets/javascripts/bootstrap-sprockets.js';
+import 'bootstrap-sass/assets/javascripts/bootstrap.min.js';
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router } from 'react-router';
@@ -12,4 +17,5 @@ ReactDOM.render(
     </Router>
   </Provider>,
   document.getElementById('react')
+
 );
