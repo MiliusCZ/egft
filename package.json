@@ -10,7 +10,8 @@
     "build": "cross-env NODE_ENV=production webpack --config ./webpack.production.js --progress --profile --colors",
     "surge": "rmdir /q /s dist & npm run build & copy dist\\index.html dist\\200.html & copy CNAME dist & surge dist",
     "production": "node server",
-    "eslint": "eslint ."
+    "eslint": "eslint .",
+    "deploy": "rmdir dist /q /s & npm run build & copy dist\\index.html dist\\200.html & firebase deploy"
   },
   "engines": {
     "node": "5.0.0",

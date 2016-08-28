@@ -18,7 +18,7 @@ export class Footer extends Component {
                     <div className="col-md-4 col-lg-4 footerItem">
                         <h4>Internet</h4>
                         <p>
-                            Mail: <a href="mailto:epigenetickafytoterapie@seznam.cz">epigenetickafytoterapie@seznam.cz</a><br />Web: <a href="/">www.epigenetickafytoterapie.cz</a><br />
+                            Mail: <a href="mailto:epigenetickafytoterapie@email.cz">epigenetickafytoterapie@email.cz</a><br />Web: <a href="/">www.epigenetickafytoterapie.cz</a><br />
                             Facebook: <a href="https://www.facebook.com/Epigenetika-léčení-i-nevyléčitelných-nemocí-1726099220994515">Epigenetika</a>
                         </p>
                     </div>

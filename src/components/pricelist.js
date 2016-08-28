@@ -33,7 +33,7 @@ export class Pricelist extends Component {
                                     <tr>
                                         <td>Kompletní testování</td>
                                         <td>2 hodiny</td>
-                                        <td>3000 Kč</td>
+                                        <td>1500 Kč / hod</td>
                                         <td>kompletní vyšetření celého těla na základě principů epigenetické fytoterapie prováděné 2 léčiteli, doporučení terapie – přírodní extrakty + byliny, vhodné potraviny; prevence</td>
                                     </tr>
                                     <tr>

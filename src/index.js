@@ -12,7 +12,7 @@ import routes from 'routes';
 
 ReactDOM.render(
   <Provider store={store}>
-    <Router history={history}>
+    <Router onUpdate={() => window.scrollTo(0, 0)} history={history}>
       {routes}
     </Router>
   </Provider>,
