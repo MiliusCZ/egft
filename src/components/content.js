@@ -1,72 +1,51 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router'
 
-import foto1 from "assets/images/foto1.jpg";
-import foto2 from "assets/images/foto2.jpg";
+import topImage from "assets/images/byliny.jpg";
 
 export class Content extends Component {
     render() {
         return (
             <div className="page-content">
-                <div className="container">
-                    <div className="row">
+                <div className="top-image">
+                    <div className="container">
+                        <div className="row">
+                            <img src={topImage} width='100%' />
+                        </div>
+                    </div>
+                </div>
+                <div className="content gray">
+                    <div className="container">
                         <div className="jumbotron">
-                            <h1>Epigenetická fytoterapie</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Etiam neque.Integer pellentesque quam vel velit.Nulla quis diam.Etiam egestas wisi a erat.Nunc dapibus tortor vel mi dapibus sollicitudin.Praesent vitae arcu tempor neque lacinia pretium.Etiam egestas wisi a erat.Fusce aliquam vestibulum ipsum.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <p>
+                                Vítejte na našem webu. Nabízíme konzultace v oblasti alternativní medicíny, založené na principu epigenetické fytoterapaie. Jedná se o propojení nejnovějších vědeckých průzkumů s přírodními superlátkami, které dokáží zvrátit většinu nemocí a to i včetně těch, které jsou považovány za nevyléčitelné.
+                            </p>
                         </div>
-                    </div>
-                    <div className="row">
-                        <h2>O nás</h2>
 
-                        <div className="col-md-6 col-lg-6">
-                            <div className="panel panel-default">
-                                <div className="panel-heading">Ing.Markéta Kováčová, MBA</div>
-                                <div className="panel-body no-padding">
-                                    <div className="text-center">
-                                        <img src={foto1}  />
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Etiam neque.Integer pellentesque quam vel velit.
-                                        </p>
-                                    </div>
-                                </div>
+                        <div className="row">
+                            <div className="col-md-4 col-lg-4 text-center infobox">
+                                <div><i className="material-icons md-48">help_outline</i></div>
+                                <p className="text-justify" style={{ width: '15em', marginLeft: 'auto', marginRight: 'auto' }}>
+                                    Co je to epigenetika, jaké používáme superlátky nebo jak vypadá konzultace u nás?
+                                </p>
+                                <Link to="/otazky"><button className="btn btn-primary">Otázky a odpovědi</button></Link>
+                            </div>
+                            <div className="col-md-4 col-lg-4 text-center infobox">
+                                <div><i className="material-icons md-48">info_outline</i></div>
+                                <p className="text-justify" style={{ width: '15em', marginLeft: 'auto', marginRight: 'auto' }}>
+                                    Kdo jsme, jak jsme se dostaly k epigenetické fytoterapii a odkud čerpáme informace?
+                                </p>
+                                <Link to="/tym"><button className="btn btn-primary">Náš tým</button></Link>
+                            </div>
+                            <div className="col-md-4 col-lg-4 text-center infobox">
+                                <div><i className="material-icons md-48">credit_card</i></div>
+                                <p className="text-justify" style={{ width: '15em', marginLeft: 'auto', marginRight: 'auto' }}>
+                                    Kolik stojí návštěva u nás a jaké varianty konzultací si můžete vybrat?
+                                </p>
+                                <Link to="/cenik"><button className="btn btn-primary">Ceník</button></Link>
                             </div>
                         </div>
 
-                        <div className="col-md-6 col-lg-6">
-                            <div className="panel panel-default">
-                                <div className="panel-heading">Ing.Zdena Plavcová</div>
-                                <div className="panel-body no-padding">
-                                    <div className="text-center">
-                                        <img src={foto2} />
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Etiam neque.Integer pellentesque quam vel velit.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <h2>Ceník</h2>
-                        <table className="table table-hover">
-                            <tbody>
-                                <tr>
-                                    <th>Název</th>
-                                    <th>Cena</th>
-                                </tr>
-                                <tr>
-                                    <td>Základní vyšetření</td>
-                                    <td>500 Kč</td>
-                                </tr>
-                                <tr>
-                                    <td>Kompletní vyšetření</td>
-                                    <td>1500 Kč</td>
-                                </tr>
-                                <tr>
-                                    <td>Orientační cena preparátů</td>
-                                    <td>500 - 2000 Kč</td>
-                                </tr>
-                            </tbody>
-                        </table>
                     </div>
                 </div>
             </div>

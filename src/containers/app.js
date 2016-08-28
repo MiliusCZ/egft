@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import styles from './app.css';
 import { loadApp } from 'actions/app';
 
-import { Content } from 'components/content';
 import { Header } from 'components/header';
 import { Footer } from 'components/footer';
 
@@ -21,7 +20,7 @@ export class App extends Component {
     return (
       <div className={styles.container}>
         <Header />
-        <Content />
+        {this.props.children} 
         <Footer />
       </div>
     );
