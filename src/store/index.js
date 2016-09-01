@@ -1,5 +1,7 @@
 import { compose, createStore, applyMiddleware, combineReducers } from 'redux';
 
+import firebase from 'firebase';
+
 import * as reducers from 'reducers';
 import sagas from 'sagas';
 
@@ -19,5 +21,14 @@ export const store = compose(
 export const history = syncHistoryWithStore(browserHistory, store);
 
 sagaMiddleware.run(sagas);
+
+var config = {
+  apiKey: "AIzaSyBg5uDuHiRJboytD_vuIFeuJCZP6y_3Es8",
+  authDomain: "egft-api.firebaseapp.com",
+  databaseURL: "https://egft-api.firebaseio.com",
+  storageBucket: "egft-api.appspot.com",
+};
+
+firebase.initializeApp(config);
 
 export default store;

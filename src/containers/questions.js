@@ -44,7 +44,7 @@ export class Questions extends Component {
             ];
 
         const questions = data.map((question, index) => (
-            <Question data={question} />    
+            <Question key={index} data={question} />    
         ));
 
         return (

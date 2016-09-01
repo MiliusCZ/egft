@@ -18,9 +18,7 @@ export class Header extends Component {
                                 <span className="icon-bar"></span>
                             </button>
 
-                            <a className="navbar-brand" href="#">
-                                <Link to="/"><img src={imageSource} height="60px" className="logo" /></Link>
-                            </a>
+                            <Link className="navbar-brand"  to="/"><img src={imageSource} height="60px" className="logo" /></Link>
                         </div>
                         <div className="collapse navbar-collapse" id="navbar">
                             <ul className="nav navbar-nav navbar-right">

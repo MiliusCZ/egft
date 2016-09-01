@@ -2,9 +2,10 @@ import React from 'react';
 import { Route, IndexRoute } from 'react-router';
 import App from 'containers/app';
 import { Content } from 'components/content';
-import { Team } from 'components/team';
-import { Pricelist } from 'components/pricelist';
-import { Questions } from 'components/questions';
+import Team from 'containers/team';
+import { Pricelist } from 'containers/pricelist';
+import { Questions } from 'containers/questions';
+import Transactions from 'containers/transactions';
 
 export const routes = (
   <Route>
@@ -13,6 +14,7 @@ export const routes = (
       <Route path="/tym" component={Team} />
       <Route path="/cenik" component={Pricelist} />
       <Route path="/otazky" component={Questions} />
+      <Route path="/transakce" component={Transactions} />
     </Route>
   </Route>
 );

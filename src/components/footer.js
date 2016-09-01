@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styles from "./footer.scss";
+import firebase from 'firebase';
 
 import map from "assets/images/map.png";
 
