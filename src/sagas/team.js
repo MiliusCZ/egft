@@ -24,12 +24,11 @@ export function* performGetTeam() {
             return storageRef.child(value.photo).getDownloadURL();
         })
 
-        return Promise.all(promises).then(values => {
-            return partialResult.map((value, index) => {
-                value.photoUrl = values[index];
+        return Promise.all(promises).then(urls =>
+            partialResult.map((value, index) => {
+                value.photoUrl = urls[index];
                 return value;
-            })
-        });
+            }));
     }, partialResult);
 
     yield put({ type: TEAM_REQUEST_SUCCESS, result });
