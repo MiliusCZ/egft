@@ -9,7 +9,9 @@ import { Footer } from 'components/footer';
 export class App extends Component {
   static propTypes = {
     dispatch: PropTypes.func,
-    loaded: PropTypes.bool
+    loaded: PropTypes.bool,
+    data: PropTypes.object,
+    children: PropTypes.object
   };
 
   componentDidMount() {
@@ -20,8 +22,8 @@ export class App extends Component {
     return (
       <div className={styles.container}>
         <Header />
-        {this.props.children} 
-        <Footer />
+        {this.props.children}
+        <Footer data={this.props.data} />
       </div>
     );
   }
@@ -29,7 +31,8 @@ export class App extends Component {
 
 function mapStateToProperties(state) {
   return {
-    loaded: state.app.loaded
+    loaded: state.app.loaded,
+    data: state.app.data
   };
 }
 

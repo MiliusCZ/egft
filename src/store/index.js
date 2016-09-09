@@ -22,11 +22,11 @@ export const history = syncHistoryWithStore(browserHistory, store);
 
 sagaMiddleware.run(sagas);
 
-var config = {
-  apiKey: "AIzaSyBg5uDuHiRJboytD_vuIFeuJCZP6y_3Es8",
-  authDomain: "egft-api.firebaseapp.com",
-  databaseURL: "https://egft-api.firebaseio.com",
-  storageBucket: "egft-api.appspot.com",
+const config = {
+  apiKey: 'AIzaSyBg5uDuHiRJboytD_vuIFeuJCZP6y_3Es8',
+  authDomain: 'egft-api.firebaseapp.com',
+  databaseURL: 'https://egft-api.firebaseio.com',
+  storageBucket: 'egft-api.appspot.com',
 };
 
 firebase.initializeApp(config);

@@ -1,4 +1,6 @@
 export const APP_LOAD = 'APP_LOAD';
+export const APP_INIT_REQUEST = 'APP_INIT_REQUEST';
+export const APP_INIT_SUCCESS = 'APP_LOAD_SUCCESS';
 export const TEAM = 'TEAM';
 export const TEAM_REQUEST = 'TEAM_REQUEST';
 export const TEAM_REQUEST_SUCCESS = 'TEAM_REQUEST_SUCCESS';

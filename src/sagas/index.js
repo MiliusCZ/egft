@@ -4,9 +4,9 @@ import { getTeam } from './team';
 import { getTransactions } from './transactions';
 
 export default function* sagas() {
-    yield [
-        fork(appInit),
-        fork(getTeam),
-        fork(getTransactions)
-    ];
+  yield [
+    fork(appInit),
+    fork(getTeam),
+    fork(getTransactions)
+  ];
 }
