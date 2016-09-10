@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Question } from 'components/question';
+import { Question } from 'components';
 
 export class Questions extends Component {
   render() {

@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 import { getTeam } from 'actions/app';
 
-import { Profile } from 'components/profile';
+import { Profile } from 'components';
 
 export class Team extends Component {
   static propTypes = {

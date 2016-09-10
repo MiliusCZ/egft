@@ -3,8 +3,7 @@ import { connect } from 'react-redux';
 import styles from './app.css';
 import { loadApp } from 'actions/app';
 
-import { Header } from 'components/header';
-import { Footer } from 'components/footer';
+import { Header, Footer } from 'components';
 
 export class App extends Component {
   static propTypes = {
@@ -18,10 +17,19 @@ export class App extends Component {
     this.props.dispatch(loadApp());
   }
 
+  handleClick() {
+    console.log('Login clicked');
+  }
+
   render() {
+    const loginObject = {
+      text: 'Login',
+      handleClick: this.handleClick
+    };
+
     return (
       <div className={styles.container}>
-        <Header />
+        <Header login={loginObject} />
         {this.props.children}
         <Footer data={this.props.data} />
       </div>

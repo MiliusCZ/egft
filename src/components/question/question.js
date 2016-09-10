@@ -1,5 +1,4 @@
 import React, { PropTypes } from 'react';
-import './profile.scss';
 
 export const Question = ({ data }) => {
   const body2 = data.body2 ? <p>{data.body2}</p> : '';

@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import './header.scss';
 import { Link } from 'react-router';
 
 import imageSource from 'assets/images/logo.png';
 
-export const Header = () => (
+export const Header = ({ login }) => (
   <header>
     <nav className="navbar navbar-default">
       <div className="container">
@@ -34,9 +34,14 @@ export const Header = () => (
             <li><Link to="/tym">Náš tým</Link></li>
             <li><Link to="/cenik">Ceník</Link></li>
             <li><a href="#footer">Kontakty</a></li>
+            <li><a onClick={login.handleClick}>{login.text}</a></li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
 );
+
+Header.propTypes = {
+  login: PropTypes.object
+};
